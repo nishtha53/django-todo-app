@@ -1,0 +1,60 @@
+{{variable}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-light bg-info">
+            <a class="navbar-brand" href="#">{{app_name}}</a>
+          </nav>
+    </header>
+    <div class="container-fluid">
+        <h2 class="text-center mt-4 mb-2">Add Your ToDo Here!</h2>
+    </div>
+    <div class="row">
+      <div class="col-12">
+          <form class="form-inline justify-content-center">
+              <div class="form-group">
+                  <input type="email" placeholder="Enter Your Todo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <button type="submit" class="mx-2 btn btn-primary">Submit</button>
+          </form>
+      </div>
+  </div>
+
+  <div class="row mt-5">
+      <div class="col-12 table-responsive">
+          <table class="table">
+              <tbody>
+                  <tr>
+                      <td>This is our todo</td>
+                      <td class="text-right">
+                          <button type="submit" class="mx-2 btn btn-danger">DELETE</button>
+                      </td>
+                      <td class="text-left">
+                          <button type="submit" class="mx-2 btn btn-info">EDIT</button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
