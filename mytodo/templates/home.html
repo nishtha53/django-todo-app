@@ -24,9 +24,9 @@
       <div class="col-12">
           <form class="form-inline justify-content-center">
               <div class="form-group">
-                  <input type="email" placeholder="Enter Your Todo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="text" placeholder="Enter Your Todo" class="form-control" >
               </div>
-              <button type="submit" class="mx-2 btn btn-primary">Submit</button>
+              <button type="submit" class="mx-2 btn btn-primary">Add</button>
           </form>
       </div>
   </div>
@@ -35,8 +35,12 @@
       <div class="col-12 table-responsive">
           <table class="table">
               <tbody>
+                {% for todo in todo_list %}
                   <tr>
-                      <td>This is our todo</td>
+                      <td>
+                             <p>{{ todo.todo_text }}</p>
+                             <!---<p class = "text-muted"><small>Added on :{{ todo.added_on }}</small></p> -->
+                      </td>
                       <td class="text-right">
                           <button type="submit" class="mx-2 btn btn-danger">DELETE</button>
                       </td>
@@ -44,11 +48,25 @@
                           <button type="submit" class="mx-2 btn btn-info">EDIT</button>
                       </td>
                   </tr>
+                  {% endfor %}
               </tbody>
           </table>
       </div>
   </div>
 </div>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-1" style="background-color:teal;">
+
+     <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="" style="color: black;">ToDo App</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
     
 
     <!-- Optional JavaScript -->
