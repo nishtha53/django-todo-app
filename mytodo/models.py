@@ -8,3 +8,7 @@ class ToDo(models.Model):
 
     def __str__(self):
         return self.todo_text
+
+
+    class Meta:
+        ordering = ['-added_on']
